@@ -1,0 +1,42 @@
+    #block_product{
+    	width:500px;
+    	border:1px solid white;
+    	padding: 10px;
+    	background-color: #ccc ;
+    	margin:100px auto;
+    }
+    #block_product img{
+    	max-width:100%;}
+
+#left1{
+  margin-top: 10px;
+  float:left;
+width:30%;
+overflow:hidden;
+margin-right: 10px;
+margin-left: 70px;
+}
+#right1{
+  float:left;
+width:30%;
+overflow:hidden;
+}
+#right2{
+  float: left;
+  width: 30%;
+  overflow: hidden;
+  margin-left: 10px;
+}
+#logo{
+
+    float: left;
+    margin-top: 300px;
+
+}
+body{
+  font-family: Roboto;
+}
+#eatsuite{
+  color: white;
+  text-decoration: none;
+}

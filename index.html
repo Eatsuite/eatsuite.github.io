@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>EatSuite</title>
+  <script type="text/javascript" src="HackTheNorth.js"></script>
+  <link rel="stylesheet" href="hackthenorth.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
+
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBsWwzFAt-5BHQv20yHoUEYxaSWvZi-qgo",
+    authDomain: "eatsuite-13489.firebaseapp.com",
+    databaseURL: "https://eatsuite-13489.firebaseio.com",
+    storageBucket: "eatsuite-13489.appspot.com",
+    messagingSenderId: "925046718073"
+  };
+  firebase.initializeApp(config);
+</script>
+</head>
+<body>
+  <!-- Uses a transparent header that draws on top of the layout's background -->
+<style>
+.demo-layout-transparent {
+  background: url('res/header.jpg') center / cover;
+}
+.demo-layout-transparent .mdl-layout__header,
+.demo-layout-transparent .mdl-layout__drawer-button {
+  /* This background is dark, so we set text to white. Use 87% black instead if
+     your background is light. */
+  color: white;
+}
+</style>
+
+<div class="demo-layout-transparent mdl-layout mdl-js-layout">
+  <header class="mdl-layout__header mdl-layout__header--transparent">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <div id="logo">
+        <img src="res/logo.png">
+      </div>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation -->
+      <nav class="mdl-navigation">
+        <!-- <a class="mdl-navigation__link" href="recipeplans.html">Recipe Plan</a>
+        <a class="mdl-navigation__link" href="">Shopping Cart</a>
+        <a class="mdl-navigation__link" href="">Who are we?</a>
+        <a class="mdl-navigation__link" href="">Why we made this</a> -->
+      </nav>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" onclick="parent.location='recipeplans.html'" style="
+    left: 500px;
+    top: 300px;
+">
+  Get me a recipe!
+</button>
+  </main>
+</div>
+<!-- <div id="block_product">
+    <h3 id="cart">Your cart is empty $0</h3>
+    <div id="product">
+        <h3 class="Title"></h3>
+        <img src="https://assets.shop.loblaws.ca/products/20088361001/b1/en/front/20088361001_front_a04.png">
+        <div id="description">
+            <p>
+                Red Delicious apples have deep-red skin and crisp yellow flesh that can turn soft when cooked. They are best enjoyed fresh, so try snacking on Red Delicious apples with some peanut butter or add slices to a mixed green salad along with toasted walnuts.
+            </p>
+        </div>
+        <p id="price" data_value="$1.76">Price: $1.76</p>
+        <button onclick="addcarts();">Add to Cart</button>
+    </div>
+    <script type="text/javascript">
+
+     var price=$("#price").attr("data_value");
+     var i=0;
+     function addcarts(){
+        i++;
+        document.getElementById("cart").innerHTML="Your cart is "+i*price;
+
+    }
+
+</script>
+</div> -->
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\toluw\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.0.7
+[debug] Platform:     win32
+[debug] Node Version: v4.5.0
+[debug] Time:         Sun Sep 18 2016 12:25:17 GMT-0400 (Eastern Daylight Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[warn] !  "firebase" key in firebase.json is deprecated. Run firebase use --add instead
+[warn] !  Deprecation Warning: Firebase Hosting configuration should be moved under "hosting" key.
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: C:\Users\toluw\Downloads\eatsuite
+[info] 
+[info] Server listening at: http://localhost:5000
+[debug] ----------------------------------------------------------------------
+[debug] Command:      C:\Program Files\nodejs\node.exe C:\Users\toluw\AppData\Roaming\npm\node_modules\firebase-tools\bin\firebase serve
+[debug] CLI Version:  3.0.7
+[debug] Platform:     win32
+[debug] Node Version: v4.5.0
+[debug] Time:         Sun Sep 18 2016 12:45:06 GMT-0400 (Eastern Daylight Time)
+[debug] ----------------------------------------------------------------------
+[debug] 
+[warn] !  "firebase" key in firebase.json is deprecated. Run firebase use --add instead
+[warn] !  Deprecation Warning: Firebase Hosting configuration should be moved under "hosting" key.
+[info] Starting Firebase development server...
+[info] 
+[info] Project Directory: C:\Users\toluw\Downloads\eatsuite
+[info] 
+[info] Server listening at: http://localhost:5000

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Recipe Plans</title>
+  <script type="text/javascript" src="HackTheNorth.js"></script>
+  
+  <link rel="stylesheet" href="hackthenorth.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.indigo-pink.min.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase-database.js"></script>
+  
+  <script defer src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/3.4.0/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBsWwzFAt-5BHQv20yHoUEYxaSWvZi-qgo",
+    authDomain: "eatsuite-13489.firebaseapp.com",
+    databaseURL: "https://eatsuite-13489.firebaseio.com",
+    storageBucket: "eatsuite-13489.appspot.com",
+    messagingSenderId: "925046718073"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+</head>
+<body style="background: url('res/bdg.jpg') center / cover;"
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <header class="mdl-layout__header">
+    <div class="mdl-layout__header-row">
+      <!-- Title -->
+      <span class="mdl-layout-title" href= "index.html"><a href="index.html" id="eatsuite">Eatsuite</a></span>
+      <!-- Add spacer, to align navigation to the right -->
+      <div class="mdl-layout-spacer"></div>
+      <!-- Navigation. We hide it in small screens. -->
+      <nav class="mdl-navigation mdl-layout--large-screen-only">
+        <a class="mdl-navigation__link" href="recipeplans.html">My recipes</a>
+        <a class="mdl-navigation__link" href="">Shopping Cart</a>
+        <a class="mdl-navigation__link" href="who.html">Who are we?</a>
+      </nav>
+    </div>
+  </header>
+  <main class="mdl-layout__content">
+    <div class="page-content">
+      <style>
+        .demo-card-wide.mdl-card {
+          width: 512px;
+        }
+        .demo-card-wide > .mdl-card__title {
+          color: #fff;
+          height: 176px;
+
+        }
+        .demo-card-wide > .mdl-card__menu {
+          color: #fff;
+        }
+        .mdl-card__supporting-text{
+          color: black;
+        }
+      </style>
+      <!-- Modals for recipes -->
+      <div class="demo-card-wide mdl-card mdl-shadow--2dp style="margin-top: 10px;" id="left1">
+        <div class="mdl-card__title" style="background: url('res/chickenbs.jpg') center / cover;">
+          <h2 class="mdl-card__title-text">Chicken Breast With Shaved Brussels Sprouts- Fitness Trainer Jenny
+          </h2>
+        </div>
+        <div class="mdl-card__supporting-text">
+          Broccoli and Brussels sprouts are loaded with cancer-preventing phytonutrients. This dish is very lean. 309 calories and 3.2 grams of saturated fat. It also packs potassium, which helps keep your blood pressure down.
+
+        </div>
+        <div class="mdl-card__actions mdl-card--border">
+          <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+            Take a look
+          </a>
+        </div>
+        <div class="mdl-card__menu">
+          <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+            <i class="material-icons">share</i>
+          </button>
+          <button id="demo-menu-lower-right"
+          class="mdl-button mdl-js-button mdl-button--icon">
+          <i class="material-icons">more_vert</i>
+        </button>
+        <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+        for="demo-menu-lower-right">
+        <li class="mdl-menu__item">Add to my recipes</li>
+        <li class="mdl-menu__item mdl-menu__item">Favorite</li>
+        <li class="mdl-menu__item">Edit recipe</li>
+      </ul>
+    </div>
+  </div>
+  <div class="demo-card-wide mdl-card mdl-shadow--2dp" id="right1" style="margin-top: 10px;">
+    <div class="mdl-card__title" style="background: url('res/bsp.jpg') center / cover;">
+      <h2 class="mdl-card__title-text">Barley-Stuffed Poblanos
+      </h2>
+    </div>
+    <div class="mdl-card__supporting-text">
+     Eat this and you get more than one-third of your daily fiber. Your metabolism will get a kick from the chili powder. The dish also delivers about 30 percent of your calcium for the day.
+
+   </div>
+   <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Take a look
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+    <button id="demo-menu-lower-right 2"
+    class="mdl-button mdl-js-button mdl-button--icon">
+    <i class="material-icons">more_vert</i>
+  </button>
+  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+  for="demo-menu-lower-right 2">
+  <li class="mdl-menu__item">Add to my recipes</li>
+  <li class="mdl-menu__item">Favorite</li>
+  <li class="mdl-menu__item">Edit Recipe</li>
+</ul>
+</div>
+</div>
+<div class="demo-card-wide mdl-card mdl-shadow--2dp" id="right2" style="margin-top: 10px;">
+  <div class="mdl-card__title"style="background: url('res/bmr.jpg') center / cover;">
+    <h2 class="mdl-card__title-text">Burger With Mushrooms and Radicchio
+
+    </h2>
+  </div>
+  <div class="mdl-card__supporting-text">
+    The lean beef provides more than half your protein and nearly 30 percent of your iron for the day. Thanks to that protein and 7 grams of fiber, you'll feel satisfied.  Shiitake and other mushrooms are rich in antioxidants and help reduce cholesterol.
+
+
+  </div>
+  <div class="mdl-card__actions mdl-card--border">
+    <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+      Take a look
+    </a>
+  </div>
+  <div class="mdl-card__menu">
+    <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
+      <i class="material-icons">share</i>
+    </button>
+    <button id="demo-menu-lower-right 3"
+    class="mdl-button mdl-js-button mdl-button--icon">
+    <i class="material-icons">more_vert</i>
+  </button>
+  <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect"
+  for="demo-menu-lower-right 3">
+  <li class="mdl-menu__item">Add to my recipes</li>
+  <li class="mdl-menu__item">Favorite</li>
+  <li class="mdl-menu__item">Edit Recipe</li>
+</ul>
+</div>
+</div>
+
+</div>
+</main>
+</div>
+
+</body>

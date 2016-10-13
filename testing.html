@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Chicken Breast With Shaved Brussels Sprouts</h2>
+
+<p id="description">Broccoli and Brussels sprouts are loaded with cancer-preventing phytonutrients. This dish is very lean. 309 calories and 3.2 grams of saturated fat. It also packs potassium, which helps keep your blood pressure down.
+</p>  
+    
+<p id="ingredient1"></p>
+
+<script>
+var text = '{"product1":"Product: Prime Chicken Breasts, Boneless Skinless","ID1":"ID: 20071473_KG","Price1":"Price: $12.408"}';
+
+var obj = JSON.parse(text);
+
+document.getElementById("ingredient1").innerHTML =
+obj.product1 + "<br>" +
+obj.ID1 + "<br>" +
+obj.Price1;
+
+</script>
+<img src="https://assets.shop.loblaws.ca/products/20071473/b1/en/front/20071473_front_a01.png">   
+<button onclick="addcarts();">Add to Cart</button>
+    
+    
+<p id="ingredient2"></p>
+
+<script>
+var text = '{"product2":"Product: Kosher Salt","ID2":"ID: 20124865_EA","Price2":"Price: $3.29"}';
+
+var obj = JSON.parse(text);
+
+document.getElementById("ingredient2").innerHTML =
+obj.product2 + "<br>" +
+obj.ID2 + "<br>" +
+obj.Price2;
+
+</script>
+<img src="https://assets.shop.loblaws.ca/products/20124865/b1/en/front/20124865_front_a01.png">   
+<button onclick="addcarts();">Add to Cart</button>    
+    
+ <p id="ingredient3"></p>
+
+<script>
+var text = '{"product3":"Product: Broccoli Stems","ID3":"ID: 20039812_EA","Price3":"Price: $3.99"}';
+
+var obj = JSON.parse(text);
+
+document.getElementById("ingredient3").innerHTML =
+obj.product3 + "<br>" +
+obj.ID3 + "<br>" +
+obj.Price3;
+
+</script>
+<img src="https://assets.shop.loblaws.ca/products/20124865/b1/en/front/20124865_front_a01.png">   
+<button onclick="addcarts();">Add to Cart</button> 
+    
+  <p id="ingredient4"></p>
+
+<script>
+var text = '{"product4":"Product: Broccoli Stems","ID4":"ID: 20039812_EA","Price4":"Price: $3.99"}';
+
+var obj = JSON.parse(text);
+
+document.getElementById("ingredient4").innerHTML =
+obj.product4 + "<br>" +
+obj.ID4 + "<br>" +
+obj.Price4;
+
+</script>
+<img src="https://assets.shop.loblaws.ca/products/20039812/b1/en/front/20039812_front_a01.png">   
+<button onclick="addcarts();>Add to Cart</button>    
+    
+</body>
+</html>
